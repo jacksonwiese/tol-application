@@ -14,6 +14,8 @@
 		08EE108429E847490047E684 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EE108329E847490047E684 /* JournalView.swift */; };
 		08EE108829E847870047E684 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EE108729E847870047E684 /* CalendarView.swift */; };
 		08EE108A29E847A10047E684 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EE108929E847A10047E684 /* SettingsView.swift */; };
+		08EE108F29E857970047E684 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EE108E29E857970047E684 /* Journal.swift */; };
+		08EE109329E85CFE0047E684 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 08EE109229E85CFE0047E684 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,7 @@
 		08EE108329E847490047E684 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		08EE108729E847870047E684 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		08EE108929E847A10047E684 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		08EE108E29E857970047E684 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08EE109329E85CFE0047E684 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +63,8 @@
 			children = (
 				08EE107529E841B50047E684 /* tol_application.swift */,
 				08EE107729E841B50047E684 /* ContentView.swift */,
-				08EE108929E847A10047E684 /* SettingsView.swift */,
-				08EE108729E847870047E684 /* CalendarView.swift */,
-				08EE108329E847490047E684 /* JournalView.swift */,
+				08EE109029E857A30047E684 /* Models */,
+				08EE108D29E857650047E684 /* Views */,
 				08EE107929E841B80047E684 /* Assets.xcassets */,
 				08EE107B29E841B80047E684 /* Preview Content */,
 			);
@@ -74,6 +77,24 @@
 				08EE107C29E841B80047E684 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		08EE108D29E857650047E684 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				08EE108929E847A10047E684 /* SettingsView.swift */,
+				08EE108729E847870047E684 /* CalendarView.swift */,
+				08EE108329E847490047E684 /* JournalView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		08EE109029E857A30047E684 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				08EE108E29E857970047E684 /* Journal.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,6 +113,9 @@
 			dependencies = (
 			);
 			name = "tol-application";
+			packageProductDependencies = (
+				08EE109229E85CFE0047E684 /* FirebaseFirestore */,
+			);
 			productName = "tol-application";
 			productReference = 08EE107229E841B50047E684 /* tol-application.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +144,9 @@
 				Base,
 			);
 			mainGroup = 08EE106929E841B50047E684;
+			packageReferences = (
+				08EE109129E85CFE0047E684 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 08EE107329E841B50047E684 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -151,6 +178,7 @@
 				08EE107829E841B50047E684 /* ContentView.swift in Sources */,
 				08EE108829E847870047E684 /* CalendarView.swift in Sources */,
 				08EE107629E841B50047E684 /* tol_application.swift in Sources */,
+				08EE108F29E857970047E684 /* Journal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +383,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		08EE109129E85CFE0047E684 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		08EE109229E85CFE0047E684 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08EE109129E85CFE0047E684 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 08EE106A29E841B50047E684 /* Project object */;
 }
