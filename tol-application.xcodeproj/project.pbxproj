@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08EE107629E841B50047E684 /* tol_applicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EE107529E841B50047E684 /* tol_applicationApp.swift */; };
+		08EE107629E841B50047E684 /* tol_application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EE107529E841B50047E684 /* tol_application.swift */; };
 		08EE107829E841B50047E684 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EE107729E841B50047E684 /* ContentView.swift */; };
 		08EE107A29E841B80047E684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08EE107929E841B80047E684 /* Assets.xcassets */; };
 		08EE107D29E841B80047E684 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08EE107C29E841B80047E684 /* Preview Assets.xcassets */; };
+		08EE108429E847490047E684 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EE108329E847490047E684 /* JournalView.swift */; };
+		08EE108829E847870047E684 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EE108729E847870047E684 /* CalendarView.swift */; };
+		08EE108A29E847A10047E684 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EE108929E847A10047E684 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		08EE107229E841B50047E684 /* tol-application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tol-application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		08EE107529E841B50047E684 /* tol_applicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tol_applicationApp.swift; sourceTree = "<group>"; };
+		08EE107529E841B50047E684 /* tol_application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tol_application.swift; sourceTree = "<group>"; };
 		08EE107729E841B50047E684 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		08EE107929E841B80047E684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08EE107C29E841B80047E684 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		08EE108329E847490047E684 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		08EE108729E847870047E684 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		08EE108929E847A10047E684 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,11 @@
 		08EE107429E841B50047E684 /* tol-application */ = {
 			isa = PBXGroup;
 			children = (
-				08EE107529E841B50047E684 /* tol_applicationApp.swift */,
+				08EE107529E841B50047E684 /* tol_application.swift */,
 				08EE107729E841B50047E684 /* ContentView.swift */,
+				08EE108929E847A10047E684 /* SettingsView.swift */,
+				08EE108729E847870047E684 /* CalendarView.swift */,
+				08EE108329E847490047E684 /* JournalView.swift */,
 				08EE107929E841B80047E684 /* Assets.xcassets */,
 				08EE107B29E841B80047E684 /* Preview Content */,
 			);
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08EE108A29E847A10047E684 /* SettingsView.swift in Sources */,
+				08EE108429E847490047E684 /* JournalView.swift in Sources */,
 				08EE107829E841B50047E684 /* ContentView.swift in Sources */,
-				08EE107629E841B50047E684 /* tol_applicationApp.swift in Sources */,
+				08EE108829E847870047E684 /* CalendarView.swift in Sources */,
+				08EE107629E841B50047E684 /* tol_application.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,13 +279,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"tol-application/Preview Content\"";
+				DEVELOPMENT_TEAM = 3MX89W3855;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,13 +310,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"tol-application/Preview Content\"";
+				DEVELOPMENT_TEAM = 3MX89W3855;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
