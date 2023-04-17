@@ -11,7 +11,7 @@
 		086C7ACD29ED9306001EFD45 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C7ACC29ED9306001EFD45 /* SpeechRecognizer.swift */; };
 		086C7ACF29ED9B28001EFD45 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C7ACE29ED9B28001EFD45 /* CustomDatePicker.swift */; };
 		086C7AD129EDA6C3001EFD45 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C7AD029EDA6C3001EFD45 /* DateValue.swift */; };
-		086C7AD329EDADD6001EFD45 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C7AD229EDADD6001EFD45 /* Task.swift */; };
+		086C7AD329EDADD6001EFD45 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C7AD229EDADD6001EFD45 /* Goal.swift */; };
 		08EE107629E841B50047E684 /* tol_application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EE107529E841B50047E684 /* tol_application.swift */; };
 		08EE107829E841B50047E684 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EE107729E841B50047E684 /* ContentView.swift */; };
 		08EE107A29E841B80047E684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08EE107929E841B80047E684 /* Assets.xcassets */; };
@@ -28,7 +28,7 @@
 		086C7ACC29ED9306001EFD45 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		086C7ACE29ED9B28001EFD45 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
 		086C7AD029EDA6C3001EFD45 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
-		086C7AD229EDADD6001EFD45 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		086C7AD229EDADD6001EFD45 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		08EE107229E841B50047E684 /* tol-application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tol-application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08EE107529E841B50047E684 /* tol_application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tol_application.swift; sourceTree = "<group>"; };
 		08EE107729E841B50047E684 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 				086C7ACC29ED9306001EFD45 /* SpeechRecognizer.swift */,
 				086C7ACE29ED9B28001EFD45 /* CustomDatePicker.swift */,
 				086C7AD029EDA6C3001EFD45 /* DateValue.swift */,
-				086C7AD229EDADD6001EFD45 /* Task.swift */,
+				086C7AD229EDADD6001EFD45 /* Goal.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -191,7 +191,7 @@
 			files = (
 				086C7ACF29ED9B28001EFD45 /* CustomDatePicker.swift in Sources */,
 				086C7ACD29ED9306001EFD45 /* SpeechRecognizer.swift in Sources */,
-				086C7AD329EDADD6001EFD45 /* Task.swift in Sources */,
+				086C7AD329EDADD6001EFD45 /* Goal.swift in Sources */,
 				08EE108A29E847A10047E684 /* SettingsView.swift in Sources */,
 				08EE108429E847490047E684 /* JournalView.swift in Sources */,
 				08EE107829E841B50047E684 /* ContentView.swift in Sources */,

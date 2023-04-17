@@ -87,20 +87,21 @@ struct CustomDatePicker: View {
             
             VStack(spacing: 15) {
                
-                Text("Tasks")
+                Text("Goals")
                     .font(.title2.bold())
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.vertical, 20)
-                if let task = tasks.first(where: { task in
-                    return isSameDay(date1: task.taskDate, date2: currentDate)
+                if let goal = goals.first(where: { goal in
+                    return isSameDay(date1: goal.goalDate, date2: currentDate)
                 }) {
-                    ForEach(task.task){ task in
+                    ForEach(goal.goal){ goal in
                         VStack(alignment: .leading, spacing: 10) {
                             
                             //For custom timing
-                            Text(task.time.addTimeInterval(CGFloat.random(in: 0...5000)), style: .time)
+                            //Text(goal.time.addTimeInterval(CGFloat.random(in: 0...5000)), style: .time)
+                            Text(Date(timeInterval: TimeInterval(CGFloat.random(in: 0...5000)), since: goal.time), style: .time)
                             
-                            Text(task.title)
+                            Text(goal.title)
                                 .font(.title2.bold())
                             
                         }
@@ -115,7 +116,7 @@ struct CustomDatePicker: View {
                     }
                 }
                 else {
-                    Text("No tasks found")
+                    Text("No goals found")
                 }
             }
             .padding()
@@ -132,19 +133,20 @@ struct CustomDatePicker: View {
         VStack {
             if value.day != -1{
                 
-                if let task = tasks.first(where: { task in
+                if let goal = goals.first(where: { goal in
                     
-                    return isSameDay(date1: task.taskDate, date2: value.date)
+                    //bug here
+                    return isSameDay(date1: goal.goalDate, date2: goal.date)
                 }){
                     Text("\(value.day)")
                         .font(.title3.bold())
-                        .foregroundColor(isSameDay(date1: task.taskDate, date2: currentDate) ? .white : .blue)
+                        .foregroundColor(isSameDay(date1: goal.goalDate, date2: currentDate) ? .white : .blue)
                         .frame(maxWidth: .infinity)
 
                     Spacer()
                     
                     Circle()
-                        .fill(isSameDay(date1: task.taskDate, date2: currentDate) ? .white : Color(.gray))
+                        .fill(isSameDay(date1: goal.goalDate, date2: currentDate) ? .white : Color(.gray))
                         .frame(width: 8, height: 8)
                 }
                 else {

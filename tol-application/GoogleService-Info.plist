@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>661079436641-qrpkmntlfk3l0e2i232a3q684d1h6j5h.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.661079436641-qrpkmntlfk3l0e2i232a3q684d1h6j5h</string>
+	<key>API_KEY</key>
+	<string>AIzaSyClSESd-JYl75EMv5OZaG_DNSOb5b_MYTI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>661079436641</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>jackson-wiese.tol-application</string>
+	<key>PROJECT_ID</key>
+	<string>tol-application</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tol-application.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:661079436641:ios:56e50233e4f529ed88e920</string>
+</dict>
+</plist>
