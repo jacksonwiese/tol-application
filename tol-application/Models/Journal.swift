@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct TolThought: Identifiable, Codable {
     let id: UUID

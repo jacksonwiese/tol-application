@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct JournalView: View {
+    
+    @StateObject var speechRecognizer = SpeechRecognizer()
+    //@State private
+    let isRecording = false
+    
     var body: some View {
         NavigationView{
             VStack{
