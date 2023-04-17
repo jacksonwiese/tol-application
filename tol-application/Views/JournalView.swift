@@ -9,7 +9,36 @@ import SwiftUI
 
 struct JournalView: View {
     var body: some View {
-        Text("Journal")
+        NavigationView{
+            VStack{
+                Text("You are incredible")
+                    .font(.headline)
+                    .padding(.bottom, 150.0)
+                ZStack{
+                    Ellipse()
+                        .fill(
+                                RadialGradient(
+                                    gradient: Gradient(colors: [.purple, .white]),
+                                    center: .center,
+                                    startRadius: 0,
+                                    endRadius: 150
+                                ))
+                        .frame(width: 350, height: 250)
+                    
+                    
+                    Image(systemName: "music.mic")
+                        .resizable()
+                        .frame(width: 150, height: 150)
+                        .foregroundColor(.black)
+                }
+                
+                    
+                
+                    
+            }
+            .navigationTitle(Text("Tol Journal"))
+        }
+        
     }
 }
 

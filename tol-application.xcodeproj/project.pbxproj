@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		086C7ACB29E8AE01001EFD45 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 086C7ACA29E8AE01001EFD45 /* GoogleService-Info.plist */; };
+		086C7ACD29ED9306001EFD45 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C7ACC29ED9306001EFD45 /* SpeechRecognizer.swift */; };
 		08EE107629E841B50047E684 /* tol_application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EE107529E841B50047E684 /* tol_application.swift */; };
 		08EE107829E841B50047E684 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EE107729E841B50047E684 /* ContentView.swift */; };
 		08EE107A29E841B80047E684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08EE107929E841B80047E684 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		086C7ACA29E8AE01001EFD45 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		086C7ACC29ED9306001EFD45 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		08EE107229E841B50047E684 /* tol-application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tol-application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08EE107529E841B50047E684 /* tol_application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tol_application.swift; sourceTree = "<group>"; };
 		08EE107729E841B50047E684 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 				08EE109029E857A30047E684 /* Models */,
 				08EE108D29E857650047E684 /* Views */,
 				08EE107929E841B80047E684 /* Assets.xcassets */,
+				086C7ACA29E8AE01001EFD45 /* GoogleService-Info.plist */,
 				08EE107B29E841B80047E684 /* Preview Content */,
 			);
 			path = "tol-application";
@@ -93,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				08EE108E29E857970047E684 /* Journal.swift */,
+				086C7ACC29ED9306001EFD45 /* SpeechRecognizer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -163,6 +169,7 @@
 			files = (
 				08EE107D29E841B80047E684 /* Preview Assets.xcassets in Resources */,
 				08EE107A29E841B80047E684 /* Assets.xcassets in Resources */,
+				086C7ACB29E8AE01001EFD45 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				086C7ACD29ED9306001EFD45 /* SpeechRecognizer.swift in Sources */,
 				08EE108A29E847A10047E684 /* SettingsView.swift in Sources */,
 				08EE108429E847490047E684 /* JournalView.swift in Sources */,
 				08EE107829E841B50047E684 /* ContentView.swift in Sources */,
