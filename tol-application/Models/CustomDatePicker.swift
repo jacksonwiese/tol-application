@@ -136,7 +136,7 @@ struct CustomDatePicker: View {
                 if let goal = goals.first(where: { goal in
                     
                     //bug here
-                    return isSameDay(date1: goal.goalDate, date2: goal.date)
+                    return isSameDay(date1: goal.goalDate, date2: value.date)
                 }){
                     Text("\(value.day)")
                         .font(.title3.bold())
