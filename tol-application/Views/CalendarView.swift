@@ -16,8 +16,9 @@ struct CalendarView: View {
         
             VStack(spacing: 20) {
                 
+                
                 //Custom Date Picker
-                CustomDatePicker(currentDate: $currentDate)
+                CustomDatePicker(currentDate: $currentDate, currentMonth: getCurrentMonthInt(from: currentDate))
             }
             .padding(.vertical)
         }
@@ -50,6 +51,15 @@ struct CalendarView: View {
             .background(.ultraThinMaterial)
         }
     }
+    
+    func getCurrentMonthInt(from date: Date) -> Int {
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.month], from: date)
+        guard let month = components.month else {
+            fatalError("Could not get month from date")
+        }
+        return month
+    }
 }
 
 struct CalendarView_Previews: PreviewProvider {
@@ -57,3 +67,4 @@ struct CalendarView_Previews: PreviewProvider {
         CalendarView()
     }
 }
+

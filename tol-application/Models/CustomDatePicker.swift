@@ -190,6 +190,15 @@ struct CustomDatePicker: View {
         return currentMonth
     }
     
+    func getCurrentMonthInt(from date: Date) -> Int {
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.month], from: date)
+        guard let month = components.month else {
+            fatalError("Could not get month from date")
+        }
+        return month
+    }
+    
     func extractDate() -> [DateValue] {
         let calendar = Calendar.current
         
