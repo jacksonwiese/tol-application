@@ -31,8 +31,8 @@ extension TolThought {
     [
         
         TolThought(id: UUID(), title: "I went to Purdue today", date: DateFormatter().date(from: "2023-03-19 10:12:00")!, lengthSeconds: 159, lengthWords: 391, transcript: "Today, I flew to Purdue to visit my best friend Jordan..."),
-        TolThought(id: UUID(), title: "Thoughts on Purdue's campus", date: DateFormatter().date(from: "2023-03-19 12:56:00")!, lengthSeconds: 159, lengthWords: 391, transcript: "Today, I flew to Purdue to visit my best friend Jordan..."),
-        TolThought(id: UUID(), title: "I went to Purdue today", date: DateFormatter().date(from: "2023-03-19 17:37:00")!, lengthSeconds: 159, lengthWords: 391, transcript: "Today, I flew to Purdue to visit my best friend Jordan...")
+        TolThought(id: UUID(), title: "Thoughts on Purdue's campus", date: DateFormatter().date(from: "2023-03-19 12:56:00")!, lengthSeconds: 179, lengthWords: 401, transcript: "Today, I flew to Purdue to visit my best friend Jordan..."),
+        TolThought(id: UUID(), title: "I went to Purdue today", date: DateFormatter().date(from: "2023-03-19 17:37:00")!, lengthSeconds: 169, lengthWords: 411, transcript: "Today, I flew to Purdue to visit my best friend Jordan...")
     
     ]
 }
